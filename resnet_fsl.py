@@ -6,6 +6,9 @@ from keras.layers import (GlobalAveragePooling2D, Activation, MaxPooling2D, Add,
                                      Flatten, InputLayer, BatchNormalization, Input, Embedding, Permute,
                                      Dropout, RandomFlip, RandomRotation, LayerNormalization, MultiHeadAttention,
                                      RandomContrast, Rescaling, Resizing, Reshape)
+from keras.utils import set_random_seed
+
+set_random_seed(0)
 
 class MyConv2D(Layer):
     """

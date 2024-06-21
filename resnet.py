@@ -3,6 +3,9 @@ import tensorflow as tf
 from keras.models import Model
 from keras.layers import Layer
 from keras.layers import (GlobalAveragePooling2D, Activation, Add, Conv2D, MaxPool2D, Dense, BatchNormalization, Input,)
+from keras.utils import set_random_seed
+
+set_random_seed(0)
 
 class MyConv2D(Layer):
     """
